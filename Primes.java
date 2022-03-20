@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//displays prime and amstrong
 public class Primes {
     public static void amstrong(int n) {
         int n1 = n, rem = 0, res = 0;
