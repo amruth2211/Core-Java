@@ -1,4 +1,4 @@
-package week3;
+package Interfaces;
 
 class PhoneNumber {
     String countryCode;

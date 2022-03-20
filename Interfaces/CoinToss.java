@@ -1,4 +1,4 @@
-package week3;
+package Interfaces;
 
 class Coin {
     String sideUp;
