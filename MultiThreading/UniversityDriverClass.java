@@ -1,4 +1,4 @@
-package week5;
+package MultiThreading;
 
 import java.util.ArrayList;
 

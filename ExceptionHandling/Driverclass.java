@@ -1,4 +1,4 @@
-package Week4;
+package ExceptionHandling;
 
 import java.util.Scanner;
 

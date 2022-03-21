@@ -1,4 +1,4 @@
-package week5;
+package Generics;
 
 class GenericExample {
 
