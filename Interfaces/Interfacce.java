@@ -55,7 +55,8 @@ class Rectangle implements Polygon, Shape {
 
     @Override
     public String toString() {
-        return "Rectangle [noOfSides=" + noOfSides + ", b=" + b + ", l=" + l + ", name=" + name + " ]";
+        return "Rectangle [area=" + area + ", b=" + b + ", l=" + l + ", name=" + name + ", noOfSides=" + noOfSides
+                + ", perimeter=" + perimeter + "]";
     }
 
 }
@@ -100,7 +101,7 @@ class Triangle implements Polygon, Shape {
     @Override
     public String toString() {
         return "Triangle [a=" + a + ", b=" + b + ", c=" + c + ", base=" + base + ", height=" + height
-                + ", name=" + name + ", noOfSides=" + noOfSides + " ]";
+                + ", area=" + area + ", name=" + name + ", noOfSides=" + noOfSides + ", perimeter=" + perimeter + "]";
     }
 
 }
@@ -109,16 +110,17 @@ public class Interfacce {
     public static void main(String[] args) {
         Rectangle rect = new Rectangle("Rectangle", 4, 10, 12);
         Triangle tr = new Triangle("Triangle", 3, 15, 20, 30, 12, 20);
-
+        System.out.println("Rectangle");
         System.out.println(rect);
         System.out.println("Area : " + rect.getArea());
-        System.out.println("Perimeter : " + rect.getPerimeter());
+        System.out.println("Perimeter : " + rect.getArea());
         rect.draw();
         System.out.println("It is a Polygon : " + rect.isPolygon());
 
+        System.out.println("Triangle");
         System.out.println(tr);
         System.out.println("Area : " + tr.getArea());
-        System.out.println("Perimeter : " + tr.getPerimeter());
+        System.out.println("Perimeter : " + tr.getArea());
         tr.draw();
         System.out.println("It is a Polygon : " + tr.isPolygon());
 
