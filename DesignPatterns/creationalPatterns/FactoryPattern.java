@@ -52,7 +52,7 @@ class MyWrapperFactory {
 public class FactoryPattern {
     public static void main(String[] args) {
         MyWrapperFactory factory = new MyWrapperFactory();
-        MyWrapper wrapper = factory.getMyWrapperInstance("567");
+        MyWrapper wrapper = factory.getMyWrapperInstance("5.4");
         wrapper.printType();
     }
 }
