@@ -1,4 +1,4 @@
-package week2;
+package Constructer;
 
 class Addition {
     int a;
@@ -31,7 +31,7 @@ class Addition {
 
 }
 
-public class Constructer {
+public class ConstructerDemo {
     public static void main(String[] args) {
         Addition obj1 = new Addition();
         Addition obj2 = new Addition(2, 3);
