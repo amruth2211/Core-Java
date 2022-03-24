@@ -1,4 +1,4 @@
-package Interfaces.BankAccount;
+package clone;
 
 class Address {
     Location location;
