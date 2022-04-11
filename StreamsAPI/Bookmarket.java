@@ -1,13 +1,11 @@
 package StreamsAPI;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
+// import java.util.HashMap;
+// import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import javax.lang.model.util.ElementScanner14;
 
 class Book implements Comparable<Book> {
     int id;
@@ -79,7 +77,7 @@ public class Bookmarket {
         Set<Book> bookSet = books.stream().collect(Collectors.toSet());
         bookSet.stream().forEach(System.out::println);
 
-        List<Book> booklist = books.stream().sorted().toList(); // sorted method
+        List<Book> booklist = books.stream().sorted().collect(Collectors.toList()); // sorted method
         System.out.println("Sorted books: ");
         booklist.stream().forEach(System.out::println);
 
